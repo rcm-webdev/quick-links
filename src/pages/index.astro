@@ -1,0 +1,39 @@
+---
+import Header from "../components/Header.astro";
+import Links from "../components/Links.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="Personal quick links website for Roberto Murillo. This a website filled with links to my personal website, social media and profressional profiles"
+    />
+    <meta
+      property="og:title"
+      content="Roberto's personal quick links website"
+    />
+    <meta property="og:image" content="/assets/img/" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Quick Links | RCM CODES</title>
+  </head>
+  <body class="bg-[#1d1807]">
+    <Header />
+    <main class="lg:mx-auto">
+      <Links />
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  body {
+    background-image: url(../assets/img/hex.svg);
+    background-position: center;
+    background-size: cover;
+  }
+</style>

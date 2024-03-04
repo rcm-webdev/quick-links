@@ -1,0 +1,25 @@
+---
+import { Icon } from "astro-icon/components";
+
+const today = new Date();
+const Year = today.toLocaleDateString("en-US", {
+  year: "numeric",
+});
+---
+
+<footer
+  class="bg-background/5 text-[#efece1] mt-5 mx-auto flex flex-col gap-2 items-center px-2 py-1"
+>
+  <p>© {Year} RCM CODES</p>
+
+  <p class="flex flex-row gap-2 items-center">
+    Developed by <a
+      href="/humans.txt"
+      target="_blank"
+      class="underline underline-offset-2 hover:no-underline"
+    >
+      Yours Truly
+    </a>
+    <Icon name="solar:bolt-bold" class="h-5 w-5" />
+  </p>
+</footer>
